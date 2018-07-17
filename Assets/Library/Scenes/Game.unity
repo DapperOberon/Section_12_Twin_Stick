@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 534669903}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,9 +304,29 @@ Prefab:
       propertyPath: m_Constraints
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1723724401116780, guid: 895a83eb7e7776949aaa5823dba42ae3, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 895a83eb7e7776949aaa5823dba42ae3, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1455289076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1723724401116780, guid: 895a83eb7e7776949aaa5823dba42ae3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1455289075}
+--- !u!114 &1455289077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455289076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d85240cd86cb6c4f8f0a5f5e808d81d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2014518088
 Prefab:
   m_ObjectHideFlags: 0
