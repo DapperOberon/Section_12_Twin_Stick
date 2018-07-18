@@ -34,7 +34,6 @@ public class Replay : MonoBehaviour {
 
 		int frame = Time.frameCount % bufferFrames;
 		float time = Time.time;
-		print("Writing frame " + frame);
 
 		keyFrames[frame] = new KeyFrame(time, transform.position, transform.rotation);
 	}
@@ -43,7 +42,6 @@ public class Replay : MonoBehaviour {
 	{
 		rb.isKinematic = true;
 		int frame = Time.frameCount % bufferFrames;
-		print("Reading frame " + frame);
 
 		transform.position = keyFrames[frame].pos;
 		transform.rotation = keyFrames[frame].rot;
